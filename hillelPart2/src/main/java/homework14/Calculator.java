@@ -1,12 +1,8 @@
 package homework14;
 
-public class Main {
-    public static void main(String[] args) {
+public class Calculator {
 
-        System.out.println(calculator(args[0], args[1], args[2]));
-    }
-
-    public static double calculator(String firstArgument, String operator, String secondArgument) {
+    public double calculate(String firstArgument, String operator, String secondArgument) {
         double result = 0;
         if (operator.equals(":") && secondArgument.equals("0")) {
             System.err.println("can't divide by zero");
